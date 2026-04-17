@@ -1,5 +1,7 @@
 BrightTV Viewership Analytics Case Study
+
 Project Overview
+
 The objective of this project is to assist the BrightTV Customer Value Management (CVM) team in meeting the CEO’s goal of growing the company’s subscription base for the current financial year
 . By analysing user profiles and viewer transaction data, this project identifies consumption trends and provides strategic recommendations to foster audience growth and stimulate activity during low-usage periods
 .
