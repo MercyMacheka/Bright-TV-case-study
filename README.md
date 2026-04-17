@@ -1,58 +1,39 @@
-# Bright-TV-case-study
-This repository contains my analysis of BrightTV’s user profiles and viewership data. The objective of the case study is to provide actionable insights to help BrightTV’s CEO and Customer Value Management (CVM) team grow the company’s subscription base during the current financial year.
-
-Objectives
-Analyze user and usage trends (who is watching, when, and how).
-
-Identify factors influencing consumption (content type, device, demographics).
-
-Recommend content strategies to increase consumption on low‑usage days.
-
-Suggest initiatives to grow BrightTV’s user base (acquisition, retention, engagement).
- Dataset
-Two datasets were used:
-
-Bright_TV_User_Profiles.xlsx – demographic and subscription details of users.
-
-Bright_TV_Viewership.xlsx – session‑level viewing transactions (UTC timestamps, channel, duration).
-
-Note: All timestamps were converted from UTC to South Africa Standard Time (UTC+2) for accurate local insights.
- Methodology
-SQL Queries:
-
-Full outer joins to combine user profiles with viewership sessions.
-
-Aggregations to analyze daily/weekly/hourly trends.
-
-Case statements to categorize users by age, gender, and time buckets.
-
-Conversion functions (from_utc_timestamp) to localize time.
-
-Visualization:
-
-Tableau dashboards for trends (line charts, heatmaps, bar charts).
-
-Demographic breakdowns and content consumption patterns.
-
- Key Insights
-Peak viewing occurs in the evenings (18:00–22:00) and on weekends.
-
-Young adults (18–30) are the most engaged demographic.
-
-Drama and sports content drive longer session durations.
-
-Mobile devices are increasingly used for short‑form content.
-
- Recommendations
-Content Strategy: Introduce midweek premieres, themed nights, and short‑form content for weekdays.
-
-Growth Initiatives: Launch referral programs, bundle subscriptions with ISPs, and offer tiered pricing.
-
-Retention: Personalized recommendations and targeted campaigns for inactive users.
-
- Deliverables
-SQL scripts for data preparation and analysis.
-
-Tableau dashboards for visualization.
-
-Presentation slides summarizing insights and recommendations.
+BrightTV Viewership Analytics Case Study
+Project Overview
+The objective of this project is to assist the BrightTV Customer Value Management (CVM) team in meeting the CEO’s goal of growing the company’s subscription base for the current financial year
+. By analysing user profiles and viewer transaction data, this project identifies consumption trends and provides strategic recommendations to foster audience growth and stimulate activity during low-usage periods
+.
+Data Description
+The analysis is based on two primary datasets provided in the case study:
+User Profiles: Demographic and account information for BrightTV subscribers
+.
+Viewer Transactions: Detailed session logs where each record represents a single viewing session for a subscriber
+.
+Technical Architecture & Workflow
+The project follows a structured data pipeline to ensure accuracy and actionable insights:
+Data Source: Microsoft excel file.
+ETL Pipeline (Processing):
+Time Standardisation: A critical technical requirement is the conversion of all dates and times from UTC to South African (SA) time to ensure alignment with local viewership patterns
+.
+Aggregation: Processing session-based records to identify high and low consumption periods
+.
+Storage: Processed data is stored and managed within Databricks for high-performance querying and analysis.
+Analysis & Presentation: Insights are visualised through an interactive dashboard and an executive slide deck.
+Key Analysis Areas
+The project addresses four core areas requested by BrightTV leadership:
+User & Usage Trends: Identifying how different segments interact with the platform
+.
+Consumption Factors: Analysing the drivers that influence when and why subscribers watch content
+.
+Low-Usage Strategy: Strategic content recommendations designed to increase engagement on days with typically lower consumption
+.
+Growth Initiatives: Recommended actions to further expand the overall BrightTV user base
+.
+Repository Deliverables
+This repository contains the following assets developed for the CVM team presentation:
+Interactive Dashboard (Infographic): A visual summary of trends and recommendations.
+Data Flow & Architecture Diagram: A mapping of the data journey from source to Databricks.
+20-Minute Executive Presentation: A slide deck structured for the CEO and CVM stakeholders.
+Project Gantt Chart: A timeline tracking project progress from 1 April to 19 April 2026.
+Project Timeline
+The project was executed over a 19-day period (April 2026), covering data preparation, timezone conversion (UTC to SA time), analytical modelling, and final strategy formulation.
