@@ -5,22 +5,27 @@ Project Overview
 
 The objective of this project is to assist the BrightTV Customer Value Management (CVM) team in meeting the CEO’s goal of growing the company’s subscription base for the current financial year
 . By analysing user profiles and viewer transaction data, this project identifies consumption trends and provides strategic recommendations to foster audience growth and stimulate activity during low-usage periods
-.
+
+
 Data Description
 
 The analysis is based on two primary datasets provided in the case study:
 User Profiles: Demographic and account information for BrightTV subscribers
 .
-Viewer Transactions: Detailed session logs where each record represents a single viewing session for a subscriber
+Viewer Transactions: 
+Detailed session logs where each record represents a single viewing session for a subscriber
 .
 Technical Architecture & Workflow
 
 The project follows a structured data pipeline to ensure accuracy and actionable insights:
+
 Data Source: Microsoft excel file.
+
 ETL Pipeline (Processing):
 Time Standardisation: A critical technical requirement is the conversion of all dates and times from UTC to South African (SA) time to ensure alignment with local viewership patterns
 .
-Aggregation: Processing session-based records to identify high and low consumption periods
+Aggregation:
+Processing session-based records to identify high and low consumption periods
 .
 Storage:
 
